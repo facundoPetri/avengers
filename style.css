@@ -1,0 +1,131 @@
+@font-face {
+  font-family: avengers;
+  src: url(avengers.ttf);
+}
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+h1 {
+  font-family: avengers;
+  font-size: 60px;
+  color: #a50000;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search,
+.submit {
+  padding: 6px 9px;
+  margin: 10px;
+  outline: none;
+  border: none;
+}
+.submit {
+  border-radius: 0;
+  background-color: #a50000;
+  color: white;
+  cursor: pointer;
+}
+.search {
+  color: white;
+  border-radius: 4px;
+  background-color: hsla(198, 39%, 32%, 0.6);
+}
+.heroes-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 15px 45px;
+}
+.hero {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  margin: 5px;
+  padding-top: 10px;
+  width: 180px;
+  border-radius: 8px;
+}
+.btn_prev,
+.btn_next,
+a {
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: blue;
+}
+.btn_prev:hover,
+.btn_next:hover,
+a:hover {
+  text-decoration: underline
+}
+a{
+  font-size: 22px;
+  margin: 15px 0;
+  text-align: center;
+  color: rgb(0, 50, 90);
+}
+.hero-expanded {
+  width: 65%;
+  min-width: 400px;
+  height: 600px;
+  padding: 10px 45px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 8px;
+}
+.footer-link {
+  text-transform: capitalize;
+}
+.name {
+  border-bottom: 4px solid #0f2027;
+}
+.description {
+  max-width: 60%;
+}
+.footer-link {
+  margin: 0 10px;
+  font-weight: bold;
+}
+.error-msg {
+  color: #ff3333;
+  font-size: 15px;
+  display: none;
+}
+.fav-button {
+  border-radius: 0;
+  background-color: #a50000;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+  text-align: right;
+  outline: none;
+  border: none;
+  position: absolute;
+  right: 5%;
+}

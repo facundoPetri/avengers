@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Avengers</title>
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <button class="fav-button" onclick="drawFavorites(favs)">Favorites</button>
+    <div class="container">
+      <span onclick="home()">
+        <h1 style="cursor: pointer">Avengers</h1>
+      </span>
+      <form>
+        <input class="search" type="text" />
+        <button class="submit">Search</button>
+      </form>
+      <span class="error-msg">Hero not found.</span>
+      <div class="pages-div">
+        <a onclick="prevPage()" class="btn_prev">Prev</a>
+        <a onclick="nextPage()" class="btn_next">Next</a>
+        page: <span class="page"></span>
+      </div>
+      <div class="heroes-container">
+      </div>
+    </div>
+  </body>
+</html>
