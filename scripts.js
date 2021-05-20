@@ -139,7 +139,7 @@ function changePage(page) {
 }
 
 function home() {
-  window.location.href = "../index.html";
+  window.location.href = "./index.html";
   htmlContent = "";
   getHeroes();
 }
@@ -160,6 +160,7 @@ function addToFav(heroId) {
   if (!favs.includes(heroId)) {
     favs.push(heroId);
     setStorage();
+    drawFavorites(favs)
   }
 }
 
@@ -168,6 +169,7 @@ function removeFromFav(heroId) {
     const index = favs.indexOf(heroId);
     favs.splice(index, 1);
     setStorage();
+    drawFavorites(favs)
   }
 }
 
@@ -176,6 +178,7 @@ function setStorage() {
 }
 
 function drawFavorites(favsId) {
+  if(favsId.length == 0) alert("you have not added any favorites yet")
   htmlContent = "";
   favsId.forEach((favId) => getHeroesId(favId, true));
 }
